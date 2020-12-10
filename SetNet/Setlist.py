@@ -1,4 +1,4 @@
-import Track
+from . import Track
 
 class Setlist:
     def __init__(self,
