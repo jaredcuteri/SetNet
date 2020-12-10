@@ -13,4 +13,9 @@ class Track:
     @property
     def artist(self):
         return self._artist
-    
+
+
+    def __eq__(self,other):
+        return type(self) is type(other) \
+           and self.artist == other.artist \
+           and self.name   == other.name
